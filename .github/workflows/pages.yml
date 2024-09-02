@@ -2,7 +2,7 @@ name: 'Gitbook Action Build'
 on:
   push:
     branches:
-      - master
+      - mainDoc
     paths-ignore:
       - '.github/**'
       - 'examples/**'
