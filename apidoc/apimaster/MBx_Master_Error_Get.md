@@ -16,3 +16,8 @@ uint32_t MBx_Master_Error_Get(_MBX_MASTER *pMaster,
 > - Error：实际收到的错误码。
 > - AddrStart：该错误指令，发送时操作的起始地址。
 > - RegNum：该错误指令，发送时操作的寄存器数量。
+
+# 返回值
+
+> - MBX_API_RETURN_DEFAULT(0x00)：正常返回。
+> - MBX_API_RETURN_BUFFER_EMPTY(0x21)：队列为空。

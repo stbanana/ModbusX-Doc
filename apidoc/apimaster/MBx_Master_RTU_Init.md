@@ -25,4 +25,5 @@ uint32_t MBx_Master_RTU_Init(_MBX_MASTER *MBxMaster,
 
 # 返回值
 
-> MBX_API_RETURN_DEFAULT(0x00)：正常返回
+> - MBX_API_RETURN_DEFAULT(0x00)：正常返回
+> - MBX_API_RETURN_ERR_PARAM(0x02)：传参异常，检查调用时的传参。
