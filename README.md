@@ -5,3 +5,5 @@
 开源协议符合 [MIT License (mit-license.org)](https://mit-license.org/)
 
 实现 MODBUS 协议库符合 [MODBUS Application Protocol 1 1 b](https://modbus.org/docs/Modbus_Application_Protocol_V1_1b3.pdf)
+
+配置文件符合 [CMSIS Configuration Wizard Annotations](https://open-cmsis-pack.github.io/Open-CMSIS-Pack-Spec/main/html/configWizard.html)
