@@ -22,6 +22,8 @@ uint32_t MBx_Master_Read_Coil_Request(_MBX_MASTER *pMaster,
 > - MBX_API_RETURN_BUFFER_FULL(0x20)：队列已满。
 > - MBX_API_RETURN_MAP_UNFIND(0x102)：未查找到合适的MAP，通常意味着从机号错误、或请求地址在地址映射表中未定义。
 
+------
+
 
 
 # **MBx_Master_Read_Disc_Input_Request**
@@ -47,6 +49,8 @@ uint32_t MBx_Master_Read_Disc_Input_Request(_MBX_MASTER *pMaster,
 > - MBX_API_RETURN_DEFAULT(0x00)：正常返回。
 > - MBX_API_RETURN_BUFFER_FULL(0x20)：队列已满。
 > - MBX_API_RETURN_MAP_UNFIND(0x102)：未查找到合适的MAP，通常意味着从机号错误、或请求地址在地址映射表中未定义。
+
+------
 
 
 
@@ -74,6 +78,8 @@ uint32_t MBx_Master_Read_Reg_Request(_MBX_MASTER *pMaster,
 > - MBX_API_RETURN_BUFFER_FULL(0x20)：队列已满。
 > - MBX_API_RETURN_MAP_UNFIND(0x102)：未查找到合适的MAP，通常意味着从机号错误、或请求地址在地址映射表中未定义。
 
+------
+
 
 
 # **MBx_Master_Read_Input_Reg_Request**
@@ -99,6 +105,8 @@ uint32_t MBx_Master_Read_Input_Reg_Request(_MBX_MASTER *pMaster,
 > - MBX_API_RETURN_DEFAULT(0x00)：正常返回。
 > - MBX_API_RETURN_BUFFER_FULL(0x20)：队列已满。
 > - MBX_API_RETURN_MAP_UNFIND(0x102)：未查找到合适的MAP，通常意味着从机号错误、或请求地址在地址映射表中未定义。
+
+------
 
 
 
@@ -126,6 +134,8 @@ uint32_t MBx_Master_Write_Coil_Request(_MBX_MASTER *pMaster,
 > - MBX_API_RETURN_BUFFER_FULL(0x20)：队列已满。
 > - MBX_API_RETURN_MAP_UNFIND(0x102)：未查找到合适的MAP，通常意味着从机号错误、或请求地址在地址映射表中未定义。
 
+------
+
 
 
 # **MBx_Master_Write_Reg_Request**
@@ -151,6 +161,8 @@ uint32_t MBx_Master_Write_Reg_Request(_MBX_MASTER *pMaster,
 > - MBX_API_RETURN_DEFAULT(0x00)：正常返回。
 > - MBX_API_RETURN_BUFFER_FULL(0x20)：队列已满。
 > - MBX_API_RETURN_MAP_UNFIND(0x102)：未查找到合适的MAP，通常意味着从机号错误、或请求地址在地址映射表中未定义。
+
+------
 
 
 
@@ -183,6 +195,8 @@ uint32_t MBx_Master_Write_Coil_Mul_Request(_MBX_MASTER *pMaster,
 > - MBX_API_RETURN_BUFFER_FULL(0x20)：队列已满。
 > - MBX_API_RETURN_MAP_UNFIND(0x102)：未查找到合适的MAP，通常意味着从机号错误、或请求地址在地址映射表中未定义。
 
+------
+
 
 
 # **MBx_Master_Write_Reg_Mul_Request**
@@ -212,3 +226,6 @@ uint32_t MBx_Master_Write_Reg_Mul_Request(_MBX_MASTER *pMaster,
 > - MBX_API_RETURN_DEFAULT(0x00)：正常返回。
 > - MBX_API_RETURN_BUFFER_FULL(0x20)：队列已满。
 > - MBX_API_RETURN_MAP_UNFIND(0x102)：未查找到合适的MAP，通常意味着从机号错误、或请求地址在地址映射表中未定义。
+
+------
+
