@@ -6,19 +6,18 @@ on:
     branches:
       - master
 
-jobs:
-  build-and-deploy:
-    name: Build and deploy
-    runs-on: ubuntu-latest
-    env:
-      MY_SECRET   : ${{secrets.GH_ACCESS_TOKEN}}
-      USER_NAME   : stbanana
-      USER_EMAIL  : 1921865467@qq.com
-      BOOK_DIR    : your_book_sources_folder_name
-
-    steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v2.3.1
-
-    - name: Build and Deploy 🚀
-      uses: onejar99/gitbook-build-publish-action@v1.0.3
+  jobs:
+    build:
+      name: Build Gitbook
+      runs-on: ubuntu-latest
+      steps:
+        # Check out the repo first
+        - name: Checkout code
+          uses: actions/checkout@v2
+        # Run this action to publish gitbook
+        - name: Publish
+          uses: tuliren/publish-gitbook@v1.0.1
+          with:
+            # specify either github_token or personal_token
+            github_token: ${{ secrets.GH_ACCESS_TOKEN }}
+            # personal_token: ${{ secrets.PERSONAL_TOKEN }}
