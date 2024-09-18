@@ -33,7 +33,7 @@ jobs:
       env:
         TOKEN: ${{ secrets.TOKEN }}
         REF: github.com/${{github.repository}}
-        MYEMAIL: yono233@outlook.com
+        MYEMAIL: 1921865467@qq.com
         MYNAME: ${{github.repository_owner}}          
       run: |
         cd _book
