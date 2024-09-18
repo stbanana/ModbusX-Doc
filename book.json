@@ -29,7 +29,9 @@
 
             "splitter",
 
-            "theme-api"
+            "theme-api",
+
+            "github"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
@@ -39,6 +41,9 @@
         },
         "hide-element": {
             "elements": [".gitbook-link"]
+        },
+        "github": {
+            "url": "https://github.com/stbanana/modbusX"
         }
     }
 }
