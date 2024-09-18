@@ -8,25 +8,28 @@
     "direction":"ltr",
     "gitbook":">=3.2.3",
     "links": {
-        "sidebar": {
+        "footer": {
             "Blog": "https://www.yono233.cn/",
             "Github": "https://github.com/stbanana"
         }
     },
     "plugins": [
-         "-lunr", 
-         "-search", 
-         "search-pro",
+            "-lunr", 
+            "-search", 
+            "search-pro",
 
-         "tbfed-pagefooter",
+            "tbfed-pagefooter",
 
-         "hide-element",
+            "hide-element",
 
-         "chapter-fold",
+            "expandable-chapters",
+            "chapter-fold",
 
-         "code",
-         
-         "splitter"
+            "code",
+
+            "splitter",
+
+            "theme-api"
     ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
