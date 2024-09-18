@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     name: Build Gitbook
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest 
     steps:
       # Check out the repo first
       - name: Checkout code
