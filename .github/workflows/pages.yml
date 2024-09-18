@@ -11,7 +11,7 @@ jobs:
     name: Build and deploy
     runs-on: ubuntu-latest
     env:
-      MY_SECRET   : ${{secrets.GH_ACCESS_TOKEN}}
+      MY_SECRET   : ${{secrets.无限期的通用Token}}
       USER_NAME   : stbanana
       USER_EMAIL  : 1921865467@qq.com
       BOOK_DIR    : your_book_sources_folder_name
