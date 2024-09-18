@@ -1,3 +1,5 @@
+# MBx_Master_Member_Add
+
 ```c
 uint32_t MBx_Master_Member_Add(_MBX_MASTER               *MBxMaster, 
                                _MBX_MASTER_TEAM_MEMBER   *MBxMember,

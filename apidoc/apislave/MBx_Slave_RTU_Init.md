@@ -1,3 +1,5 @@
+# MBx_Slave_RTU_Init
+
 ```c
 uint32_t MBx_Slave_RTU_Init(_MBX_SLAVE                *MBxSlave, 
                             uint8_t                    SlaveID,

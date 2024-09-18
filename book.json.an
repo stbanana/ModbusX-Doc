@@ -1,0 +1,15 @@
+    "plugins": [
+         "-lunr", 
+         "-search", 
+         "search-pro",  			// 这个组合使得搜索支持中英文
+
+         "tbfed-pagefooter", 		// 这个插件新增一个可自定义的页脚
+
+         "hide-element", 			// 隐藏元素 用于把影响观感的gitbook内容去除
+
+         "chapter-fold",			// 使得导航栏可以折叠
+
+         "code", 					// 在代码域的右上角添加一个复制按钮
+		 
+		 "splitter" 				// 使得左侧目录可以拖动宽度
+    ],

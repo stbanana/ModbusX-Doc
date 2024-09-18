@@ -1,3 +1,5 @@
+# MBx_Master_Error_Get
+
 ```c
 uint32_t MBx_Master_Error_Get(_MBX_MASTER *pMaster, 
                               uint8_t     *Func,

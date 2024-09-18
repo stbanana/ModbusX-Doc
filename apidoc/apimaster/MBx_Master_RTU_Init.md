@@ -1,3 +1,5 @@
+# MBx_Master_RTU_Init
+
 ```c
 uint32_t MBx_Master_RTU_Init(_MBX_MASTER *MBxMaster, 
                              MBX_SEND_PTR MBxSend,

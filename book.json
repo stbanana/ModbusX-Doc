@@ -1,0 +1,41 @@
+{
+    "root":".",
+    "author":"yono",
+    "title":"modbusX-Doc",
+    "language":"zh-hans",
+    "description":"This is gitbook",
+    "isbn":"000-0-00-000000-0",
+    "direction":"ltr",
+    "gitbook":">=3.2.3",
+    "links": {
+        "sidebar": {
+            "Blog": "https://www.yono233.cn/",
+            "Github": "https://github.com/stbanana"
+        }
+    },
+    "plugins": [
+         "-lunr", 
+         "-search", 
+         "search-pro",
+
+         "tbfed-pagefooter",
+
+         "hide-element",
+
+         "chapter-fold",
+
+         "code",
+         
+         "splitter"
+    ],
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+          "copyright":"Copyright &yono 2024",
+          "modify_label": "文件修订时间：",
+          "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        }
+    }
+}
