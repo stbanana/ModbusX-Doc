@@ -2,8 +2,8 @@
 
 ```c
 void MBx_Ticks(
-	uint32_t Cycle
-);
+               uint32_t Cycle
+              );
 ```
 
 必须周期调用, 驱动modbusX系统的关键函数。无论主机还是从机，均由这个唯一的库tick进行驱动。
