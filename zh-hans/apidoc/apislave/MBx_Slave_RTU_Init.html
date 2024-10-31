@@ -1,0 +1,478 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>MBx_Slave_RTU_Init · modbusX-Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yono">
+        <meta name="identifier" content="000-0-00-000000-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-sidebar-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="MBx_Slave_TCP_Init.html" />
+    
+    
+    <link rel="prev" href="../../top/从机常用API.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../overview/特性.html">
+            
+                <a href="../../overview/特性.html">
+            
+                    
+                    库特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../top/通用常用API.html">
+            
+                <a href="../../top/通用常用API.html">
+            
+                    
+                    通用常用API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../apigengric/MBx_Ticks.html">
+            
+                <a href="../apigengric/MBx_Ticks.html">
+            
+                    
+                    MBx_Ticks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../top/从机常用API.html">
+            
+                <a href="../../top/从机常用API.html">
+            
+                    
+                    从机常用API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.4.1" data-path="MBx_Slave_RTU_Init.html">
+            
+                <a href="MBx_Slave_RTU_Init.html">
+            
+                    
+                    MBx_Slave_RTU_Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="MBx_Slave_TCP_Init.html">
+            
+                <a href="MBx_Slave_TCP_Init.html">
+            
+                    
+                    MBx_Slave_TCP_Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../top/主机常用API.html">
+            
+                <a href="../../top/主机常用API.html">
+            
+                    
+                    主机常用API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../apimaster/MBx_Master_RTU_Init.html">
+            
+                <a href="../apimaster/MBx_Master_RTU_Init.html">
+            
+                    
+                    MBx_Master_RTU_Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../apimaster/MBx_Master_Member_Add.html">
+            
+                <a href="../apimaster/MBx_Master_Member_Add.html">
+            
+                    
+                    MBx_Master_Member_Add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../apimaster/MBx_Master_Error_Get.html">
+            
+                <a href="../apimaster/MBx_Master_Error_Get.html">
+            
+                    
+                    MBx_Master_Error_Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../apimaster/Master2Slave.html">
+            
+                <a href="../apimaster/Master2Slave.html">
+            
+                    
+                    对从机发起请求 系列API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >MBx_Slave_RTU_Init</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#mbxslavertuinit"><b></b>MBx_Slave_RTU_Init</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul></ul></div><a href="#mbxslavertuinit" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="mbxslavertuinit"><a name="mbxslavertuinit" class="anchor-navigation-ex-anchor" href="#mbxslavertuinit"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxslavertuinit" class="plugin-anchor" href="#mbxslavertuinit"><i class="fa fa-link" aria-hidden="true"></i></a>MBx_Slave_RTU_Init</h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Slave_RTU_Init(_MBX_SLAVE                *MBxSlave, 
+                            <span class="hljs-keyword">uint8_t</span>                    SlaveID,
+                            <span class="hljs-keyword">const</span> _MBX_MAP_LIST_ENTRY *MAP,
+                            MBX_SEND_PTR               MBxSend,
+                            MBX_GTEC_PTR               MBxGetc,
+                            <span class="hljs-keyword">uint32_t</span>                   BaudRate,
+                            <span class="hljs-keyword">uint8_t</span>                   *RxBuffer,
+                            <span class="hljs-keyword">uint32_t</span>                   RxBufferSize,
+                            <span class="hljs-keyword">uint8_t</span>                   *TxBuffer,
+                            <span class="hljs-keyword">uint32_t</span>                   TxBufferSize
+                           );
+</code></pre>
+<p>&#x4F5C;&#x4E3A; RTU &#x521D;&#x59CB;&#x5316; MBX &#x4ECE;&#x673A;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x4F20;&#x5165;&#x5404;&#x79CD;&#x914D;&#x7F6E;&#x53C2;&#x6570;&#x5BF9;&#x8FD9;&#x4E2A; _MBX_SLAVE &#x7C7B;&#x578B;&#x4ECE;&#x673A;&#x5BF9;&#x8C61;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#x3002;</p>
+<h2 id="&#x4F20;&#x53C2;"><a name="&#x4F20;&#x53C2;" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxSlave&#xFF1A;&#x671F;&#x671B;&#x521D;&#x59CB;&#x5316;&#x7684;&#x4ECE;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x8BE5;&#x4ECE;&#x673A;&#x5BF9;&#x8C61;&#x914D;&#x7F6E;&#x4E3A;&#x7684;&#x4ECE;&#x673A; ID &#xFF0C;&#x8303;&#x56F4; 1~247 &#x3002;</li>
+<li>MAP&#xFF1A;&#x8BE5;&#x5934;&#x6307;&#x9488;&#x6307;&#x5411;&#x4EE5; MBX_MAP_LIST_END &#x5B8F;&#x4E3A;&#x7ED3;&#x5C3E;&#x7684; list &#x8868;&#x3002;&#x5B9A;&#x4E49;&#x6240;&#x6709;&#x53EF;&#x80FD;&#x7684;&#x5730;&#x5740;&#x3002;</li>
+<li>MBxSend&#xFF1A;&#x53E6;&#x5B9E;&#x73B0;&#x7684;&#x6570;&#x636E;&#x53D1;&#x9001; port &#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6307;&#x9488;&#x3002;</li>
+<li>MBxGetc&#xFF1A;&#x53E6;&#x5B9E;&#x73B0;&#x7684;&#x6570;&#x636E;&#x63A5;&#x6536;port&#xFF0C;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#x6307;&#x9488;&#x3002;</li>
+<li>BaudRate&#xFF1A;&#x5B9E;&#x9645;&#x4E32;&#x884C;&#x94FE;&#x8DEF;&#x7684;&#x6CE2;&#x7279;&#x7387;&#xFF0C;&#x7528;&#x4E8E;&#x81EA;&#x52A8;&#x8BA1;&#x7B97; 1.5 &#x5B57;&#x7B26;&#x548C; 3.5 &#x5B57;&#x7B26;&#x65F6;&#x95F4;&#x3002;</li>
+<li>RxBuffer&#xFF1A;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x63A5;&#x6536;&#x6570;&#x636E;&#x7684;&#x4E00;&#x6BB5;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x5934;&#x6307;&#x9488;&#x3002;</li>
+<li>RxBufferSize&#xFF1A;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x63A5;&#x6536;&#x6570;&#x636E;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x603B;&#x957F;&#x5EA6;&#x3002;&#x8FD9;&#x4E2A;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x51B3;&#x5B9A;&#x4E86;&#x89E3;&#x6790;&#x5355;&#x6761;&#x8BF7;&#x6C42;&#x7684;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x3002;</li>
+<li>TxBuffer&#xFF1A;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x4E00;&#x6BB5;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x5934;&#x6307;&#x9488;&#x3002;</li>
+<li>TxBufferSize&#xFF1A;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x53D1;&#x9001;&#x6570;&#x636E;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x603B;&#x957F;&#x5EA6;&#x3002;&#x8FD9;&#x4E2A;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x51B3;&#x5B9A;&#x4E86;&#x53D1;&#x9001;&#x5355;&#x6761;&#x56DE;&#x590D;&#x7684;&#x6700;&#x5927;&#x957F;&#x5EA6;&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;"><a name="&#x8FD4;&#x56DE;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;</li>
+<li>MBX_API_RETURN_MAP_UNFORMAT(0x101)&#xFF1A;&#x4F20;&#x5165;&#x7684;MAP&#x8868;&#x4E0D;&#x89C4;&#x8303;</li>
+</ul>
+</blockquote>
+<footer class="page-footer"><span class="copyright">Copyright &amp;yono 2024 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Date of revision:
+2024-10-31 11:27:14
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"MBx_Slave_RTU_Init","level":"1.4.1","depth":2,"next":{"title":"MBx_Slave_TCP_Init","level":"1.4.2","depth":2,"path":"apidoc/apislave/MBx_Slave_TCP_Init.md","ref":"apidoc/apislave/MBx_Slave_TCP_Init.md","articles":[]},"previous":{"title":"从机常用API","level":"1.4","depth":1,"path":"top/从机常用API.md","ref":"top/从机常用API.md","articles":[{"title":"MBx_Slave_RTU_Init","level":"1.4.1","depth":2,"path":"apidoc/apislave/MBx_Slave_RTU_Init.md","ref":"apidoc/apislave/MBx_Slave_RTU_Init.md","articles":[]},{"title":"MBx_Slave_TCP_Init","level":"1.4.2","depth":2,"path":"apidoc/apislave/MBx_Slave_TCP_Init.md","ref":"apidoc/apislave/MBx_Slave_TCP_Init.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-fontsettings","tbfed-pagefooter","hide-element","sidebar-style","expandable-chapters","chapter-fold","code","splitter","theme-api","github","back-to-top-button","anchors","anchor-navigation-ex"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sidebar-style":{"author":"yono","title":"modbusX-Doc"},"tbfed-pagefooter":{"copyright":"Copyright &yono 2024","modify_label":"Date of revision:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/stbanana/modbusX"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"multipleH4":false},"theme-api":{"languages":[],"split":true,"theme":"light"},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"yono","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"000-0-00-000000-0","variables":{},"title":"modbusX-Doc","language":"zh-hans","languages":{"en":{"name":"English","path":"en"},"zh-hans":{"name":"简体中文","path":"zh-hans"}},"gitbook":">=3.2.3","description":"This is gitbook","direction":"ltr"},"file":{"path":"apidoc/apislave/MBx_Slave_RTU_Init.md","mtime":"2024-10-31T11:27:14.911Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-31T11:27:59.400Z"},"basePath":"../..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sidebar-style/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+
+    </body>
+</html>
+

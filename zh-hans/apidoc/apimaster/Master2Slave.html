@@ -1,0 +1,650 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>对从机发起请求 系列API · modbusX-Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="yono">
+        <meta name="identifier" content="000-0-00-000000-0" scheme="ISBN">
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-sidebar-style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-theme-api/theme-api.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="MBx_Master_Error_Get.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../overview/特性.html">
+            
+                <a href="../../overview/特性.html">
+            
+                    
+                    库特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../../top/通用常用API.html">
+            
+                <a href="../../top/通用常用API.html">
+            
+                    
+                    通用常用API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../apigengric/MBx_Ticks.html">
+            
+                <a href="../apigengric/MBx_Ticks.html">
+            
+                    
+                    MBx_Ticks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../../top/从机常用API.html">
+            
+                <a href="../../top/从机常用API.html">
+            
+                    
+                    从机常用API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../apislave/MBx_Slave_RTU_Init.html">
+            
+                <a href="../apislave/MBx_Slave_RTU_Init.html">
+            
+                    
+                    MBx_Slave_RTU_Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../apislave/MBx_Slave_TCP_Init.html">
+            
+                <a href="../apislave/MBx_Slave_TCP_Init.html">
+            
+                    
+                    MBx_Slave_TCP_Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../../top/主机常用API.html">
+            
+                <a href="../../top/主机常用API.html">
+            
+                    
+                    主机常用API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="MBx_Master_RTU_Init.html">
+            
+                <a href="MBx_Master_RTU_Init.html">
+            
+                    
+                    MBx_Master_RTU_Init
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="MBx_Master_Member_Add.html">
+            
+                <a href="MBx_Master_Member_Add.html">
+            
+                    
+                    MBx_Master_Member_Add
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="MBx_Master_Error_Get.html">
+            
+                <a href="MBx_Master_Error_Get.html">
+            
+                    
+                    MBx_Master_Error_Get
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="Master2Slave.html">
+            
+                <a href="Master2Slave.html">
+            
+                    
+                    对从机发起请求 系列API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >对从机发起请求 系列API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;-&#x7CFB;&#x5217;api"><b></b>&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42; &#x7CFB;&#x5217;API</a></li><li><span class="title-icon "></span><a href="#mbxmasterreadcoilrequest"><b></b>MBx_Master_Read_Coil_Request</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterreaddiscinputrequest"><b></b>MBx_Master_Read_Disc_Input_Request</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;_1"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_1"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterreadregrequest"><b></b>MBx_Master_Read_Reg_Request</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;_2"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_2"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterreadinputregrequest"><b></b>MBx_Master_Read_Input_Reg_Request</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;_3"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_3"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterwritecoilrequest"><b></b>MBx_Master_Write_Coil_Request</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;_4"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_4"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterwriteregrequest"><b></b>MBx_Master_Write_Reg_Request</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;_5"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_5"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterwritecoilmulrequest"><b></b>MBx_Master_Write_Coil_Mul_Request</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;_6"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_6"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterwriteregmulrequest"><b></b>MBx_Master_Write_Reg_Mul_Request</a></li><ul><li><span class="title-icon "></span><a href="#&#x4F20;&#x53C2;_7"><b></b>&#x4F20;&#x53C2;</a></li><li><span class="title-icon "></span><a href="#&#x8FD4;&#x56DE;&#x503C;_7"><b></b>&#x8FD4;&#x56DE;&#x503C;</a></li></ul></ul></div><a href="#&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;-&#x7CFB;&#x5217;api" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;-&#x7CFB;&#x5217;api"><a name="&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;-&#x7CFB;&#x5217;api" class="anchor-navigation-ex-anchor" href="#&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;-&#x7CFB;&#x5217;api"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;-&#x7CFB;&#x5217;api" class="plugin-anchor" href="#&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42;-&#x7CFB;&#x5217;api"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5BF9;&#x4ECE;&#x673A;&#x53D1;&#x8D77;&#x8BF7;&#x6C42; &#x7CFB;&#x5217;API</h1>
+<h1 id="mbxmasterreadcoilrequest"><a name="mbxmasterreadcoilrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterreadcoilrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterreadcoilrequest" class="plugin-anchor" href="#mbxmasterreadcoilrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Read_Coil_Request</strong></h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Read_Coil_Request(_MBX_MASTER *pMaster, 
+                                      <span class="hljs-keyword">uint8_t</span>      SlaveID,
+                                      <span class="hljs-keyword">uint16_t</span>     StartAddr,
+                                      <span class="hljs-keyword">uint16_t</span>     ReadNum);
+</code></pre>
+<p> MBX &#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x8BFB;&#x7EBF;&#x5708;&#x8BF7;&#x6C42;</p>
+<h2 id="&#x4F20;&#x53C2;"><a name="&#x4F20;&#x53C2;" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxMaster&#xFF1A;&#x671F;&#x671B;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;MBX&#x4E3B;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x671F;&#x671B;&#x8BF7;&#x6C42;&#x7684;&#x4ECE;&#x673A;&#x53F7;&#x3002;</li>
+<li>StartAddr&#xFF1A;&#x8BFB;&#x53D6;&#x8D77;&#x59CB;&#x5730;&#x5740;&#x3002;</li>
+<li>ReadNum&#xFF1A;&#x8BFB;&#x53D6;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;"><a name="&#x8FD4;&#x56DE;&#x503C;" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MBX_API_RETURN_BUFFER_FULL(0x20)&#xFF1A;&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>MBX_API_RETURN_MAP_UNFIND(0x102)&#xFF1A;&#x672A;&#x67E5;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;MAP&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x673A;&#x53F7;&#x9519;&#x8BEF;&#x3001;&#x6216;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x5728;&#x5730;&#x5740;&#x6620;&#x5C04;&#x8868;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="mbxmasterreaddiscinputrequest"><a name="mbxmasterreaddiscinputrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterreaddiscinputrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterreaddiscinputrequest" class="plugin-anchor" href="#mbxmasterreaddiscinputrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Read_Disc_Input_Request</strong></h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Read_Disc_Input_Request(_MBX_MASTER *pMaster, 
+                                            <span class="hljs-keyword">uint8_t</span>      SlaveID,
+                                            <span class="hljs-keyword">uint16_t</span>     StartAddr,
+                                            <span class="hljs-keyword">uint16_t</span>     ReadNum);
+</code></pre>
+<p> MBX &#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x8BFB;&#x79BB;&#x6563;&#x8F93;&#x5165;&#x8BF7;&#x6C42;</p>
+<h2 id="&#x4F20;&#x53C2;_1"><a name="&#x4F20;&#x53C2;_1" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxMaster&#xFF1A;&#x671F;&#x671B;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;MBX&#x4E3B;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x671F;&#x671B;&#x8BF7;&#x6C42;&#x7684;&#x4ECE;&#x673A;&#x53F7;&#x3002;</li>
+<li>StartAddr&#xFF1A;&#x8BFB;&#x53D6;&#x8D77;&#x59CB;&#x5730;&#x5740;&#x3002;</li>
+<li>ReadNum&#xFF1A;&#x8BFB;&#x53D6;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_1"><a name="&#x8FD4;&#x56DE;&#x503C;_1" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MBX_API_RETURN_BUFFER_FULL(0x20)&#xFF1A;&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>MBX_API_RETURN_MAP_UNFIND(0x102)&#xFF1A;&#x672A;&#x67E5;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;MAP&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x673A;&#x53F7;&#x9519;&#x8BEF;&#x3001;&#x6216;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x5728;&#x5730;&#x5740;&#x6620;&#x5C04;&#x8868;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="mbxmasterreadregrequest"><a name="mbxmasterreadregrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterreadregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterreadregrequest" class="plugin-anchor" href="#mbxmasterreadregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Read_Reg_Request</strong></h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Read_Reg_Request(_MBX_MASTER *pMaster, 
+                                     <span class="hljs-keyword">uint8_t</span>      SlaveID,
+                                     <span class="hljs-keyword">uint16_t</span>     StartAddr,
+                                     <span class="hljs-keyword">uint16_t</span>     ReadNum);
+</code></pre>
+<p> MBX &#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x8BFB;&#x4FDD;&#x6301;&#x5BC4;&#x5B58;&#x5668;&#x8BF7;&#x6C42;</p>
+<h2 id="&#x4F20;&#x53C2;_2"><a name="&#x4F20;&#x53C2;_2" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;_2"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxMaster&#xFF1A;&#x671F;&#x671B;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;MBX&#x4E3B;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x671F;&#x671B;&#x8BF7;&#x6C42;&#x7684;&#x4ECE;&#x673A;&#x53F7;&#x3002;</li>
+<li>StartAddr&#xFF1A;&#x8BFB;&#x53D6;&#x8D77;&#x59CB;&#x5730;&#x5740;&#x3002;</li>
+<li>ReadNum&#xFF1A;&#x8BFB;&#x53D6;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_2"><a name="&#x8FD4;&#x56DE;&#x503C;_2" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_2"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MBX_API_RETURN_BUFFER_FULL(0x20)&#xFF1A;&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>MBX_API_RETURN_MAP_UNFIND(0x102)&#xFF1A;&#x672A;&#x67E5;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;MAP&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x673A;&#x53F7;&#x9519;&#x8BEF;&#x3001;&#x6216;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x5728;&#x5730;&#x5740;&#x6620;&#x5C04;&#x8868;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="mbxmasterreadinputregrequest"><a name="mbxmasterreadinputregrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterreadinputregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterreadinputregrequest" class="plugin-anchor" href="#mbxmasterreadinputregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Read_Input_Reg_Request</strong></h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Read_Input_Reg_Request(_MBX_MASTER *pMaster, 
+                                           <span class="hljs-keyword">uint8_t</span>      SlaveID,
+                                           <span class="hljs-keyword">uint16_t</span>     StartAddr,
+                                           <span class="hljs-keyword">uint16_t</span>     ReadNum);
+</code></pre>
+<p> MBX &#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x8BFB;&#x8F93;&#x5165;&#x5BC4;&#x5B58;&#x5668;&#x8BF7;&#x6C42;</p>
+<h2 id="&#x4F20;&#x53C2;_3"><a name="&#x4F20;&#x53C2;_3" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;_3"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxMaster&#xFF1A;&#x671F;&#x671B;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;MBX&#x4E3B;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x671F;&#x671B;&#x8BF7;&#x6C42;&#x7684;&#x4ECE;&#x673A;&#x53F7;&#x3002;</li>
+<li>StartAddr&#xFF1A;&#x8BFB;&#x53D6;&#x8D77;&#x59CB;&#x5730;&#x5740;&#x3002;</li>
+<li>ReadNum&#xFF1A;&#x8BFB;&#x53D6;&#x6570;&#x91CF;&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_3"><a name="&#x8FD4;&#x56DE;&#x503C;_3" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_3"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MBX_API_RETURN_BUFFER_FULL(0x20)&#xFF1A;&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>MBX_API_RETURN_MAP_UNFIND(0x102)&#xFF1A;&#x672A;&#x67E5;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;MAP&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x673A;&#x53F7;&#x9519;&#x8BEF;&#x3001;&#x6216;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x5728;&#x5730;&#x5740;&#x6620;&#x5C04;&#x8868;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="mbxmasterwritecoilrequest"><a name="mbxmasterwritecoilrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterwritecoilrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterwritecoilrequest" class="plugin-anchor" href="#mbxmasterwritecoilrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Write_Coil_Request</strong></h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Write_Coil_Request(_MBX_MASTER *pMaster, 
+                                       <span class="hljs-keyword">uint8_t</span>      SlaveID,
+                                       <span class="hljs-keyword">uint16_t</span>     Addr,
+                                       <span class="hljs-keyword">uint16_t</span>     Value);
+</code></pre>
+<p> MBX &#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x5199;&#x5355;&#x4E2A;&#x7EBF;&#x5708;&#x8BF7;&#x6C42;</p>
+<h2 id="&#x4F20;&#x53C2;_4"><a name="&#x4F20;&#x53C2;_4" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;_4"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxMaster&#xFF1A;&#x671F;&#x671B;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;MBX&#x4E3B;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x671F;&#x671B;&#x8BF7;&#x6C42;&#x7684;&#x4ECE;&#x673A;&#x53F7;&#x3002;</li>
+<li>Addr&#xFF1A;&#x5199;&#x5165;&#x5730;&#x5740;&#x3002;</li>
+<li>Value&#xFF1A;&#x5199;&#x5165;&#x503C;&#x3002;&#x5199;&#x5165;&#x7EBF;&#x5708;&#xFF0C;&#x672C;&#x8D28;&#x4E0A;&#x53EA;&#x6709;0&#x4E0E;&#x5927;&#x4E8E;0&#xFF0C;&#x7A0B;&#x5E8F;&#x4F1A;&#x81EA;&#x52A8;&#x5904;&#x7406;&#x683C;&#x5F0F;&#x5316;&#x8BF7;&#x6C42;&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_4"><a name="&#x8FD4;&#x56DE;&#x503C;_4" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_4"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MBX_API_RETURN_BUFFER_FULL(0x20)&#xFF1A;&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>MBX_API_RETURN_MAP_UNFIND(0x102)&#xFF1A;&#x672A;&#x67E5;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;MAP&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x673A;&#x53F7;&#x9519;&#x8BEF;&#x3001;&#x6216;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x5728;&#x5730;&#x5740;&#x6620;&#x5C04;&#x8868;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="mbxmasterwriteregrequest"><a name="mbxmasterwriteregrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterwriteregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterwriteregrequest" class="plugin-anchor" href="#mbxmasterwriteregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Write_Reg_Request</strong></h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Write_Reg_Request(_MBX_MASTER *pMaster,
+                                      <span class="hljs-keyword">uint8_t</span>      SlaveID,
+                                      <span class="hljs-keyword">uint16_t</span>     Addr,
+                                      <span class="hljs-keyword">uint16_t</span>     Value);
+</code></pre>
+<p> MBX &#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x5199;&#x5355;&#x4E2A;&#x4FDD;&#x6301;&#x5BC4;&#x5B58;&#x5668;&#x8BF7;&#x6C42;</p>
+<h2 id="&#x4F20;&#x53C2;_5"><a name="&#x4F20;&#x53C2;_5" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;_5"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxMaster&#xFF1A;&#x671F;&#x671B;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;MBX&#x4E3B;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x671F;&#x671B;&#x8BF7;&#x6C42;&#x7684;&#x4ECE;&#x673A;&#x53F7;&#x3002;</li>
+<li>Addr&#xFF1A;&#x5199;&#x5165;&#x5730;&#x5740;&#x3002;</li>
+<li>Value&#xFF1A;&#x5199;&#x5165;&#x503C;&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_5"><a name="&#x8FD4;&#x56DE;&#x503C;_5" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_5"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MBX_API_RETURN_BUFFER_FULL(0x20)&#xFF1A;&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>MBX_API_RETURN_MAP_UNFIND(0x102)&#xFF1A;&#x672A;&#x67E5;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;MAP&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x673A;&#x53F7;&#x9519;&#x8BEF;&#x3001;&#x6216;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x5728;&#x5730;&#x5740;&#x6620;&#x5C04;&#x8868;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="mbxmasterwritecoilmulrequest"><a name="mbxmasterwritecoilmulrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterwritecoilmulrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterwritecoilmulrequest" class="plugin-anchor" href="#mbxmasterwritecoilmulrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Write_Coil_Mul_Request</strong></h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Write_Coil_Mul_Request(_MBX_MASTER *pMaster,
+                                           <span class="hljs-keyword">uint8_t</span>      SlaveID,
+                                           <span class="hljs-keyword">uint16_t</span>     StartAddr,
+                                           <span class="hljs-keyword">uint16_t</span>     WriteNum,
+                                           <span class="hljs-keyword">uint8_t</span>     *Data,
+                                           <span class="hljs-keyword">uint16_t</span>     DataLen);
+</code></pre>
+<p> MBX &#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x5199;&#x591A;&#x4E2A;&#x7EBF;&#x5708;&#x8BF7;&#x6C42; &#xFF0C;Data&#x3001;DataLen&#x4F20;&#x53C2;&#x9700;&#x8981;&#x81EA;&#x884C;&#x683C;&#x5F0F;&#x5316; &#x89C1;&#x5176;&#x4E2D;&#x5173;&#x4E8E;&quot;(0x0F)&#x5199;&#x591A;&#x4E2A;&#x7EBF;&#x5708;&#x7684;&#x683C;&#x5F0F; &quot;
+<a href="https://www.yono233.cn/posts/shoot/24_7_26_modbus&#x534F;&#x8BAE;&#x4ECB;&#x7ECD;(&#x672A;&#x5B8C;&#x6210;" target="_blank">modbus&#x534F;&#x8BAE;&#x4ECB;&#x7ECD; </a>)</p>
+<h2 id="&#x4F20;&#x53C2;_6"><a name="&#x4F20;&#x53C2;_6" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;_6"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxMaster&#xFF1A;&#x671F;&#x671B;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;MBX&#x4E3B;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x671F;&#x671B;&#x8BF7;&#x6C42;&#x7684;&#x4ECE;&#x673A;&#x53F7;&#x3002;</li>
+<li>StartAddr&#xFF1A;&#x5199;&#x5165;&#x8D77;&#x59CB;&#x5730;&#x5740;&#x3002;</li>
+<li>WriteNum&#xFF1A;&#x5199;&#x5165;&#x6570;&#x91CF;&#x3002;</li>
+<li>Data&#xFF1A;&#x5199;&#x5165;&#x6570;&#x636E;&#x8D77;&#x59CB;&#x6307;&#x9488;&#x3002;</li>
+<li>DataLen&#xFF1A;&#x5199;&#x5165;&#x6570;&#x636E;&#x957F;&#x5EA6;[&#x5B57;&#x8282;&#x6570;]&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_6"><a name="&#x8FD4;&#x56DE;&#x503C;_6" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_6"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MBX_API_RETURN_BUFFER_FULL(0x20)&#xFF1A;&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>MBX_API_RETURN_MAP_UNFIND(0x102)&#xFF1A;&#x672A;&#x67E5;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;MAP&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x673A;&#x53F7;&#x9519;&#x8BEF;&#x3001;&#x6216;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x5728;&#x5730;&#x5740;&#x6620;&#x5C04;&#x8868;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<h1 id="mbxmasterwriteregmulrequest"><a name="mbxmasterwriteregmulrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterwriteregmulrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterwriteregmulrequest" class="plugin-anchor" href="#mbxmasterwriteregmulrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Write_Reg_Mul_Request</strong></h1>
+<pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Write_Reg_Mul_Request(_MBX_MASTER *pMaster, 
+                                          <span class="hljs-keyword">uint8_t</span>      SlaveID,
+                                          <span class="hljs-keyword">uint16_t</span>     StartAddr,
+                                          <span class="hljs-keyword">uint16_t</span>     WriteNum,
+                                          <span class="hljs-keyword">uint8_t</span>     *Data,
+                                          <span class="hljs-keyword">uint16_t</span>     DataLen);
+</code></pre>
+<p> MBX &#x4E3B;&#x673A;&#x53D1;&#x51FA;&#x4E00;&#x6761;&#x5199;&#x591A;&#x4E2A;&#x4FDD;&#x6301;&#x5BC4;&#x5B58;&#x5668;&#x8BF7;&#x6C42;</p>
+<h2 id="&#x4F20;&#x53C2;_7"><a name="&#x4F20;&#x53C2;_7" class="anchor-navigation-ex-anchor" href="#&#x4F20;&#x53C2;_7"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x4F20;&#x53C2;" class="plugin-anchor" href="#&#x4F20;&#x53C2;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4F20;&#x53C2;</h2>
+<blockquote>
+<ul>
+<li>MBxMaster&#xFF1A;&#x671F;&#x671B;&#x53D1;&#x51FA;&#x8BF7;&#x6C42;&#x7684;MBX&#x4E3B;&#x673A;&#x5BF9;&#x8C61;&#x6307;&#x9488;&#x3002;</li>
+<li>SlaveID&#xFF1A;&#x671F;&#x671B;&#x8BF7;&#x6C42;&#x7684;&#x4ECE;&#x673A;&#x53F7;&#x3002;</li>
+<li>StartAddr&#xFF1A;&#x5199;&#x5165;&#x8D77;&#x59CB;&#x5730;&#x5740;&#x3002;</li>
+<li>WriteNum&#xFF1A;&#x5199;&#x5165;&#x6570;&#x91CF;&#x3002;</li>
+<li>Data&#xFF1A;&#x5199;&#x5165;&#x6570;&#x636E;&#x8D77;&#x59CB;&#x6307;&#x9488;&#x3002;</li>
+<li>DataLen&#xFF1A;&#x5199;&#x5165;&#x6570;&#x636E;&#x957F;&#x5EA6;[&#x5B57;&#x8282;&#x6570;]&#x3002;</li>
+</ul>
+</blockquote>
+<h2 id="&#x8FD4;&#x56DE;&#x503C;_7"><a name="&#x8FD4;&#x56DE;&#x503C;_7" class="anchor-navigation-ex-anchor" href="#&#x8FD4;&#x56DE;&#x503C;_7"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x8FD4;&#x56DE;&#x503C;" class="plugin-anchor" href="#&#x8FD4;&#x56DE;&#x503C;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x8FD4;&#x56DE;&#x503C;</h2>
+<blockquote>
+<ul>
+<li>MBX_API_RETURN_DEFAULT(0x00)&#xFF1A;&#x6B63;&#x5E38;&#x8FD4;&#x56DE;&#x3002;</li>
+<li>MBX_API_RETURN_BUFFER_FULL(0x20)&#xFF1A;&#x961F;&#x5217;&#x5DF2;&#x6EE1;&#x3002;</li>
+<li>MBX_API_RETURN_MAP_UNFIND(0x102)&#xFF1A;&#x672A;&#x67E5;&#x627E;&#x5230;&#x5408;&#x9002;&#x7684;MAP&#xFF0C;&#x901A;&#x5E38;&#x610F;&#x5473;&#x7740;&#x4ECE;&#x673A;&#x53F7;&#x9519;&#x8BEF;&#x3001;&#x6216;&#x8BF7;&#x6C42;&#x5730;&#x5740;&#x5728;&#x5730;&#x5740;&#x6620;&#x5C04;&#x8868;&#x4E2D;&#x672A;&#x5B9A;&#x4E49;&#x3002;</li>
+</ul>
+</blockquote>
+<hr>
+<footer class="page-footer"><span class="copyright">Copyright &amp;yono 2024 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Date of revision:
+2024-10-31 11:27:14
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"对从机发起请求 系列API","level":"1.5.4","depth":2,"previous":{"title":"MBx_Master_Error_Get","level":"1.5.3","depth":2,"path":"apidoc/apimaster/MBx_Master_Error_Get.md","ref":"apidoc/apimaster/MBx_Master_Error_Get.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-fontsettings","tbfed-pagefooter","hide-element","sidebar-style","expandable-chapters","chapter-fold","code","splitter","theme-api","github","back-to-top-button","anchors","anchor-navigation-ex"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sidebar-style":{"author":"yono","title":"modbusX-Doc"},"tbfed-pagefooter":{"copyright":"Copyright &yono 2024","modify_label":"Date of revision:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/stbanana/modbusX"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"multipleH4":false},"theme-api":{"languages":[],"split":true,"theme":"light"},"back-to-top-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"yono","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"000-0-00-000000-0","variables":{},"title":"modbusX-Doc","language":"zh-hans","languages":{"en":{"name":"English","path":"en"},"zh-hans":{"name":"简体中文","path":"zh-hans"}},"gitbook":">=3.2.3","description":"This is gitbook","direction":"ltr"},"file":{"path":"apidoc/apimaster/Master2Slave.md","mtime":"2024-10-31T11:27:14.911Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-10-31T11:27:59.400Z"},"basePath":"../..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sidebar-style/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-theme-api/theme-api.js"></script>
+        
+    
+
+    </body>
+</html>
+
