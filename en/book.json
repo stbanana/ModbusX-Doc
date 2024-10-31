@@ -2,9 +2,51 @@
     "root":".",
     "author":"yono",
     "title":"modbusX-Doc",
-    "language":"en-hans",
+    "language":"en",
+    "languages": {
+    "en": {
+      "name": "English",
+      "path": "en"
+    },
+    "zh-hans": {
+      "name": "简体中文",
+      "path": "zh-hans"
+    }
+  },
     "description":"This is gitbook",
     "isbn":"000-0-00-000000-0",
     "direction":"ltr",
-    "gitbook":">=3.2.3"
+    "gitbook":">=3.2.3",
+    "pluginsConfig": {
+        "tbfed-pagefooter": {
+          "copyright":"Copyright &yono 2024",
+          "modify_label": "Date of revision:",
+          "modify_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "hide-element": {
+            "elements": [".gitbook-link"]
+        },
+        "sidebar-style": {
+            "title": "modbusX-Doc",
+            "author": "yono"
+        },
+        "github": {
+            "url": "https://github.com/stbanana/modbusX"
+        },
+        "anchor-navigation-ex": {
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right",
+            "multipleH1": false,
+            "multipleH2": false,
+            "multipleH3": false,
+            "multipleH4": false,
+            "showLevelIcon": false,
+            "showLevel": false
+        }
+    },
+    
+    "scripts": [
+        "assets/language-switcher.js"
+    ]
 }

@@ -7,6 +7,8 @@
 
          "hide-element", 			// 隐藏元素 用于把影响观感的gitbook内容去除
 
+         "sidebar-style",           // 自定义的目录头和目录脚
+
          "chapter-fold",			// 使得导航栏可以折叠
 
          "code", 					// 在代码域的右上角添加一个复制按钮
@@ -15,4 +17,7 @@
 
          
          "back-to-top-button",      // 使得具有返回最上的小箭头
+
+        "anchors",
+        "anchor-navigation-ex"      // 组合在右侧具有悬浮的目录
     ],

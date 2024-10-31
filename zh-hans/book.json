@@ -2,40 +2,21 @@
     "root":".",
     "author":"yono",
     "title":"modbusX-Doc",
-    "language":"en",
+    "language":"zh-hans",
+    "languages": {
+    "en": {
+      "name": "English",
+      "path": "en"
+    },
+    "zh-hans": {
+      "name": "简体中文",
+      "path": "zh-hans"
+    }
+  },
     "description":"This is gitbook",
     "isbn":"000-0-00-000000-0",
     "direction":"ltr",
     "gitbook":">=3.2.3",
-    "plugins": [
-            "-lunr", 
-            "-search", 
-            "search-pro",
-            "-fontsettings",
-
-            "tbfed-pagefooter",
-
-            "hide-element",
-
-            "sidebar-style",
-
-            "expandable-chapters",
-            "chapter-fold",
-
-            "code",
-
-            "splitter",
-
-            "theme-api",
-
-            "github",
-            
-            "back-to-top-button",
-            
-            "anchors",
-            "anchor-navigation-ex"
-
-    ],
     "pluginsConfig": {
         "tbfed-pagefooter": {
           "copyright":"Copyright &yono 2024",
