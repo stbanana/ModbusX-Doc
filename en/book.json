@@ -43,10 +43,18 @@
             "multipleH4": false,
             "showLevelIcon": false,
             "showLevel": false
+        },
+        "versions": {
+            "options": [
+                {
+                    "value": "/en",
+                    "text": "English"
+                },
+                {
+                    "value": "/zh-hans",
+                    "text": "中文"
+                }
+            ]
         }
-    },
-    
-    "scripts": [
-        "assets/language-switcher.js"
-    ]
+    }
 }

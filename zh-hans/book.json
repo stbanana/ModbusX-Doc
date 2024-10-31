@@ -20,7 +20,7 @@
     "pluginsConfig": {
         "tbfed-pagefooter": {
           "copyright":"Copyright &yono 2024",
-          "modify_label": "Date of revision:",
+          "modify_label": "编辑于:",
           "modify_format": "YYYY-MM-DD HH:mm:ss"
         },
         "hide-element": {
@@ -43,6 +43,18 @@
             "multipleH4": false,
             "showLevelIcon": false,
             "showLevel": false
+        },
+        "versions": {
+            "options": [
+                {
+                    "value": "/zh-hans",
+                    "text": "中文"
+                },
+                {
+                    "value": "/en",
+                    "text": "English"
+                }
+            ]
         }
     }
 }

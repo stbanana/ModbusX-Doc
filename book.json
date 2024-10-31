@@ -8,60 +8,39 @@
     "direction":"ltr",
     "gitbook":">=3.2.3",
     "plugins": [
-            "-lunr", 
-            "-search", 
-            "search-pro",
-            "-fontsettings",
+        "-lunr", 
+        "-search", 
+        "search-pro",
+        "-fontsettings",
 
-            "tbfed-pagefooter",
+        "tbfed-pagefooter",
 
-            "hide-element",
+        "hide-element",
 
-            "sidebar-style",
+        "sidebar-style",
 
-            "expandable-chapters",
-            "chapter-fold",
+        "expandable-chapters",
+        "chapter-fold",
 
-            "code",
+        "code",
 
-            "splitter",
+        "splitter",
 
-            "theme-api",
+        "theme-api",
 
-            "github",
-            
-            "back-to-top-button",
-            
-            "anchors",
-            "anchor-navigation-ex"
+        "github",
+
+        "back-to-top-button",
+
+        "anchors",
+        "anchor-navigation-ex",
+
+        "versions-select"
 
     ],
     "pluginsConfig": {
-        "tbfed-pagefooter": {
-          "copyright":"Copyright &yono 2024",
-          "modify_label": "Date of revision:",
-          "modify_format": "YYYY-MM-DD HH:mm:ss"
-        },
-        "hide-element": {
-            "elements": [".gitbook-link"]
-        },
-        "sidebar-style": {
-            "title": "modbusX-Doc",
-            "author": "yono"
-        },
         "github": {
             "url": "https://github.com/stbanana/modbusX"
-        },
-        "anchor-navigation-ex": {
-            "tocLevel1Icon": "fa fa-hand-o-right",
-            "tocLevel2Icon": "fa fa-hand-o-right",
-            "tocLevel3Icon": "fa fa-hand-o-right",
-            "multipleH1": false,
-            "multipleH2": false,
-            "multipleH3": false,
-            "multipleH4": false,
-            "showLevelIcon": false,
-            "showLevel": false
         }
     }
 }
