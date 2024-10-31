@@ -20,4 +20,6 @@
 
         "anchors",
         "anchor-navigation-ex"      // 组合在右侧具有悬浮的目录
+
+        "versions-select"           // 多版本的文档
     ],
