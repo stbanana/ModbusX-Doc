@@ -1,7 +1,5 @@
 # Table of contents
 
-* [规范](README.md)
-
 * [库特性](overview/特性.md)
 
 * [通用常用API](top/通用常用API.md)

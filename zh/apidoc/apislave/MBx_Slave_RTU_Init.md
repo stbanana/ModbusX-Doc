@@ -16,7 +16,7 @@ uint32_t MBx_Slave_RTU_Init(_MBX_SLAVE                *MBxSlave,
 
 作为 RTU 初始化 MBX 从机对象，并传入各种配置参数对这个 _MBX_SLAVE 类型从机对象进行初始化。
 
-# 传参
+## 传参
 
 > - MBxSlave：期望初始化的从机对象指针。
 > - SlaveID：该从机对象配置为的从机 ID ，范围 1~247 。
@@ -29,7 +29,7 @@ uint32_t MBx_Slave_RTU_Init(_MBX_SLAVE                *MBxSlave,
 > - TxBuffer：用于存放发送数据的一段内存空间头指针。
 > - TxBufferSize：用于存放发送数据的内存空间总长度。这个内存空间决定了发送单条回复的最大长度。
 
-# 返回值
+## 返回值
 
 > - MBX_API_RETURN_DEFAULT(0x00)：正常返回
 > - MBX_API_RETURN_MAP_UNFORMAT(0x101)：传入的MAP表不规范
