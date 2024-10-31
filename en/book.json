@@ -47,11 +47,11 @@
         "versions": {
             "options": [
                 {
-                    "value": "/en",
+                    "value": "ModbusX-Doc/en",
                     "text": "English"
                 },
                 {
-                    "value": "/zh-hans",
+                    "value": "ModbusX-Doc/zh-hans",
                     "text": "中文"
                 }
             ]
