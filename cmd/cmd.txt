@@ -14,3 +14,8 @@ gitbook serve ./modbusX-doc
 gitbook build 
 gitbook build . ./docs 
 gitbook build --log=debug --debug
+
+npm run start
+npm run build
+npm run deploy
+npm run publish
