@@ -47,11 +47,11 @@
         "versions": {
             "options": [
                 {
-                    "value": "ModbusX-Doc/en",
+                    "value": "https://stbanana.github.io/ModbusX-Doc/en",
                     "text": "English"
                 },
                 {
-                    "value": "ModbusX-Doc/zh-hans",
+                    "value": "https://stbanana.github.io/ModbusX-Doc/zh-hans",
                     "text": "中文"
                 }
             ]
