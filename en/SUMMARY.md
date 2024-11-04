@@ -12,3 +12,5 @@
     * [MBx_Master_Member_Add](apidoc/apimaster/MBx_Master_Member_Add.md)
     * [MBx_Master_Error_Get](apidoc/apimaster/MBx_Master_Error_Get.md)
     * [API Series for Initiating Requests to Slave](apidoc/apimaster/Master2Slave.md)
+* [utility](top/实用功能.md)
+    * [User Configuration File](apidoc/tools/用户配置文件.md)
