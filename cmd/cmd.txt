@@ -6,7 +6,6 @@ nvm list # 查看已安装版本
 
 npm uninstall -g gitbook-cli
 npm install -g gitbook-cli
-npm install ebook-convert
 
 gitbook init
 gitbook install
@@ -15,9 +14,6 @@ gitbook serve ./modbusX-doc
 gitbook build 
 gitbook build . ./docs 
 gitbook build --log=debug --debug
-gitbook pdf
-gitbook epub
-gitbook mobi
 
 npm run start
 npm run build
