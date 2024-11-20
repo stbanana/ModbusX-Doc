@@ -7,7 +7,6 @@
     "ebook-convert": "^2.0.1",
     "gh-pages": "^1.0.0",
     "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
-    "gitbook-plugin-back-to-top-button": "^0.1.4",
     "gitbook-plugin-chapter-fold": "^0.0.4",
     "gitbook-plugin-code": "^0.1.0",
     "gitbook-plugin-custom-html": "^0.0.2",
