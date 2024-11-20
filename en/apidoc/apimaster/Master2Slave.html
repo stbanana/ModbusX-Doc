@@ -49,14 +49,6 @@
                 
             
                 
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchors/plugin.css">
-                
-            
-                
-                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
-                
-            
-                
                 <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-versions-select/plugin.css">
                 
             
@@ -380,15 +372,15 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#api-series-for-initiating-requests-to-slave"><b></b>API Series for Initiating Requests to Slave</a></li><li><span class="title-icon "></span><a href="#mbxmasterreadcoilrequest"><b></b>MBx_Master_Read_Coil_Request</a></li><ul><li><span class="title-icon "></span><a href="#parameters"><b></b>Parameters</a></li><li><span class="title-icon "></span><a href="#return-value"><b></b>Return Value</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterreaddiscinputrequest"><b></b>MBx_Master_Read_Disc_Input_Request</a></li><ul><li><span class="title-icon "></span><a href="#parameters_1"><b></b>Parameters</a></li><li><span class="title-icon "></span><a href="#return-value_1"><b></b>Return Value</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterreadregrequest"><b></b>MBx_Master_Read_Reg_Request</a></li><ul><li><span class="title-icon "></span><a href="#parameters_2"><b></b>Parameters</a></li><li><span class="title-icon "></span><a href="#return-value_2"><b></b>Return Value</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterreadinputregrequest"><b></b>MBx_Master_Read_Input_Reg_Request</a></li><ul><li><span class="title-icon "></span><a href="#parameters_3"><b></b>Parameters</a></li><li><span class="title-icon "></span><a href="#return-value_3"><b></b>Return Value</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterwritecoilrequest"><b></b>MBx_Master_Write_Coil_Request</a></li><ul><li><span class="title-icon "></span><a href="#parameters_4"><b></b>Parameters</a></li><li><span class="title-icon "></span><a href="#return-value_4"><b></b>Return Value</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterwriteregrequest"><b></b>MBx_Master_Write_Reg_Request</a></li><ul><li><span class="title-icon "></span><a href="#parameters_5"><b></b>Parameters</a></li><li><span class="title-icon "></span><a href="#return-value_5"><b></b>Return Value</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterwritecoilmulrequest"><b></b>MBx_Master_Write_Coil_Mul_Request</a></li><ul><li><span class="title-icon "></span><a href="#parameters_6"><b></b>Parameters</a></li><li><span class="title-icon "></span><a href="#return-value_6"><b></b>Return Value</a></li></ul><li><span class="title-icon "></span><a href="#mbxmasterwriteregmulrequest"><b></b>MBx_Master_Write_Reg_Mul_Request</a></li><ul><li><span class="title-icon "></span><a href="#parameters_7"><b></b>Parameters</a></li><li><span class="title-icon "></span><a href="#return-value_7"><b></b>Return Value</a></li></ul></ul></div><a href="#api-series-for-initiating-requests-to-slave" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="api-series-for-initiating-requests-to-slave"><a name="api-series-for-initiating-requests-to-slave" class="anchor-navigation-ex-anchor" href="#api-series-for-initiating-requests-to-slave"><i class="fa fa-link" aria-hidden="true"></i></a><a name="api-series-for-initiating-requests-to-slave" class="plugin-anchor" href="#api-series-for-initiating-requests-to-slave"><i class="fa fa-link" aria-hidden="true"></i></a>API Series for Initiating Requests to Slave</h1>
-<h1 id="mbxmasterreadcoilrequest"><a name="mbxmasterreadcoilrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterreadcoilrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterreadcoilrequest" class="plugin-anchor" href="#mbxmasterreadcoilrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Read_Coil_Request</strong></h1>
+                                <h1 id="api-series-for-initiating-requests-to-slave">API Series for Initiating Requests to Slave</h1>
+<h1 id="mbxmasterreadcoilrequest"><strong>MBx_Master_Read_Coil_Request</strong></h1>
 <pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Read_Coil_Request(_MBX_MASTER *pMaster, 
                                       <span class="hljs-keyword">uint8_t</span>      SlaveID,
                                       <span class="hljs-keyword">uint16_t</span>     StartAddr,
                                       <span class="hljs-keyword">uint16_t</span>     ReadNum);
 </code></pre>
 <p> The MBX master issues a read coil request.</p>
-<h2 id="parameters"><a name="parameters" class="anchor-navigation-ex-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a><a name="parameters" class="plugin-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Parameters</h2>
+<h2 id="parameters">Parameters</h2>
 <blockquote>
 <ul>
 <li>pMaster: Pointer to the MBX master object that is expected to issue the request.</li>
@@ -397,7 +389,7 @@
 <li>ReadNum: The number of coils to read.</li>
 </ul>
 </blockquote>
-<h2 id="return-value"><a name="return-value" class="anchor-navigation-ex-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a><a name="return-value" class="plugin-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a>Return Value</h2>
+<h2 id="return-value">Return Value</h2>
 <blockquote>
 <ul>
 <li>MBX_API_RETURN_DEFAULT(0x00): Normal return.</li>
@@ -406,14 +398,14 @@
 </ul>
 </blockquote>
 <hr>
-<h1 id="mbxmasterreaddiscinputrequest"><a name="mbxmasterreaddiscinputrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterreaddiscinputrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterreaddiscinputrequest" class="plugin-anchor" href="#mbxmasterreaddiscinputrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Read_Disc_Input_Request</strong></h1>
+<h1 id="mbxmasterreaddiscinputrequest"><strong>MBx_Master_Read_Disc_Input_Request</strong></h1>
 <pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Read_Disc_Input_Request(_MBX_MASTER *pMaster, 
                                             <span class="hljs-keyword">uint8_t</span>      SlaveID,
                                             <span class="hljs-keyword">uint16_t</span>     StartAddr,
                                             <span class="hljs-keyword">uint16_t</span>     ReadNum);
 </code></pre>
 <p> The MBX master issues a read discrete input request.</p>
-<h2 id="parameters_1"><a name="parameters_1" class="anchor-navigation-ex-anchor" href="#parameters_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="parameters" class="plugin-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Parameters</h2>
+<h2 id="parameters">Parameters</h2>
 <blockquote>
 <ul>
 <li>pMaster: Pointer to the MBX master object that is expected to issue the request.</li>
@@ -422,7 +414,7 @@
 <li>ReadNum: The number of coils to read.</li>
 </ul>
 </blockquote>
-<h2 id="return-value_1"><a name="return-value_1" class="anchor-navigation-ex-anchor" href="#return-value_1"><i class="fa fa-link" aria-hidden="true"></i></a><a name="return-value" class="plugin-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a>Return Value</h2>
+<h2 id="return-value">Return Value</h2>
 <blockquote>
 <ul>
 <li>MBX_API_RETURN_DEFAULT(0x00): Normal return.</li>
@@ -431,14 +423,14 @@
 </ul>
 </blockquote>
 <hr>
-<h1 id="mbxmasterreadregrequest"><a name="mbxmasterreadregrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterreadregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterreadregrequest" class="plugin-anchor" href="#mbxmasterreadregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Read_Reg_Request</strong></h1>
+<h1 id="mbxmasterreadregrequest"><strong>MBx_Master_Read_Reg_Request</strong></h1>
 <pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Read_Reg_Request(_MBX_MASTER *pMaster, 
                                      <span class="hljs-keyword">uint8_t</span>      SlaveID,
                                      <span class="hljs-keyword">uint16_t</span>     StartAddr,
                                      <span class="hljs-keyword">uint16_t</span>     ReadNum);
 </code></pre>
 <p> The MBX master issues a read holding register request.</p>
-<h2 id="parameters_2"><a name="parameters_2" class="anchor-navigation-ex-anchor" href="#parameters_2"><i class="fa fa-link" aria-hidden="true"></i></a><a name="parameters" class="plugin-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Parameters</h2>
+<h2 id="parameters">Parameters</h2>
 <blockquote>
 <ul>
 <li>pMaster: Pointer to the MBX master object that is expected to issue the request.</li>
@@ -447,7 +439,7 @@
 <li>ReadNum: The number of coils to read.</li>
 </ul>
 </blockquote>
-<h2 id="return-value_2"><a name="return-value_2" class="anchor-navigation-ex-anchor" href="#return-value_2"><i class="fa fa-link" aria-hidden="true"></i></a><a name="return-value" class="plugin-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a>Return Value</h2>
+<h2 id="return-value">Return Value</h2>
 <blockquote>
 <ul>
 <li>MBX_API_RETURN_DEFAULT(0x00): Normal return.</li>
@@ -456,14 +448,14 @@
 </ul>
 </blockquote>
 <hr>
-<h1 id="mbxmasterreadinputregrequest"><a name="mbxmasterreadinputregrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterreadinputregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterreadinputregrequest" class="plugin-anchor" href="#mbxmasterreadinputregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Read_Input_Reg_Request</strong></h1>
+<h1 id="mbxmasterreadinputregrequest"><strong>MBx_Master_Read_Input_Reg_Request</strong></h1>
 <pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Read_Input_Reg_Request(_MBX_MASTER *pMaster, 
                                            <span class="hljs-keyword">uint8_t</span>      SlaveID,
                                            <span class="hljs-keyword">uint16_t</span>     StartAddr,
                                            <span class="hljs-keyword">uint16_t</span>     ReadNum);
 </code></pre>
 <p> The MBX master issues a read input register request.</p>
-<h2 id="parameters_3"><a name="parameters_3" class="anchor-navigation-ex-anchor" href="#parameters_3"><i class="fa fa-link" aria-hidden="true"></i></a><a name="parameters" class="plugin-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Parameters</h2>
+<h2 id="parameters">Parameters</h2>
 <blockquote>
 <ul>
 <li>pMaster: Pointer to the MBX master object that is expected to issue the request.</li>
@@ -472,7 +464,7 @@
 <li>ReadNum: The number of coils to read.</li>
 </ul>
 </blockquote>
-<h2 id="return-value_3"><a name="return-value_3" class="anchor-navigation-ex-anchor" href="#return-value_3"><i class="fa fa-link" aria-hidden="true"></i></a><a name="return-value" class="plugin-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a>Return Value</h2>
+<h2 id="return-value">Return Value</h2>
 <blockquote>
 <ul>
 <li>MBX_API_RETURN_DEFAULT(0x00): Normal return.</li>
@@ -481,14 +473,14 @@
 </ul>
 </blockquote>
 <hr>
-<h1 id="mbxmasterwritecoilrequest"><a name="mbxmasterwritecoilrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterwritecoilrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterwritecoilrequest" class="plugin-anchor" href="#mbxmasterwritecoilrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Write_Coil_Request</strong></h1>
+<h1 id="mbxmasterwritecoilrequest"><strong>MBx_Master_Write_Coil_Request</strong></h1>
 <pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Write_Coil_Request(_MBX_MASTER *pMaster, 
                                        <span class="hljs-keyword">uint8_t</span>      SlaveID,
                                        <span class="hljs-keyword">uint16_t</span>     Addr,
                                        <span class="hljs-keyword">uint16_t</span>     Value);
 </code></pre>
 <p> The MBX master issues a write single coil request.</p>
-<h2 id="parameters_4"><a name="parameters_4" class="anchor-navigation-ex-anchor" href="#parameters_4"><i class="fa fa-link" aria-hidden="true"></i></a><a name="parameters" class="plugin-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Parameters</h2>
+<h2 id="parameters">Parameters</h2>
 <blockquote>
 <ul>
 <li>pMaster: Pointer to the MBX master object that is expected to issue the request.</li>
@@ -497,7 +489,7 @@
 <li>Value: The value to write. For coils, the value is essentially either 0 or greater than 0; the program will automatically handle the formatting of the request.</li>
 </ul>
 </blockquote>
-<h2 id="return-value_4"><a name="return-value_4" class="anchor-navigation-ex-anchor" href="#return-value_4"><i class="fa fa-link" aria-hidden="true"></i></a><a name="return-value" class="plugin-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a>Return Value</h2>
+<h2 id="return-value">Return Value</h2>
 <blockquote>
 <ul>
 <li>MBX_API_RETURN_DEFAULT(0x00): Normal return.</li>
@@ -506,14 +498,14 @@
 </ul>
 </blockquote>
 <hr>
-<h1 id="mbxmasterwriteregrequest"><a name="mbxmasterwriteregrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterwriteregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterwriteregrequest" class="plugin-anchor" href="#mbxmasterwriteregrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Write_Reg_Request</strong></h1>
+<h1 id="mbxmasterwriteregrequest"><strong>MBx_Master_Write_Reg_Request</strong></h1>
 <pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Write_Reg_Request(_MBX_MASTER *pMaster,
                                       <span class="hljs-keyword">uint8_t</span>      SlaveID,
                                       <span class="hljs-keyword">uint16_t</span>     Addr,
                                       <span class="hljs-keyword">uint16_t</span>     Value);
 </code></pre>
 <p> The MBX master issues a write single holding register request.</p>
-<h2 id="parameters_5"><a name="parameters_5" class="anchor-navigation-ex-anchor" href="#parameters_5"><i class="fa fa-link" aria-hidden="true"></i></a><a name="parameters" class="plugin-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Parameters</h2>
+<h2 id="parameters">Parameters</h2>
 <blockquote>
 <ul>
 <li>pMaster: Pointer to the MBX master object that is expected to issue the request.</li>
@@ -522,7 +514,7 @@
 <li>Value: The value to write.</li>
 </ul>
 </blockquote>
-<h2 id="return-value_5"><a name="return-value_5" class="anchor-navigation-ex-anchor" href="#return-value_5"><i class="fa fa-link" aria-hidden="true"></i></a><a name="return-value" class="plugin-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a>Return Value</h2>
+<h2 id="return-value">Return Value</h2>
 <blockquote>
 <ul>
 <li>MBX_API_RETURN_DEFAULT(0x00): Normal return.</li>
@@ -531,7 +523,7 @@
 </ul>
 </blockquote>
 <hr>
-<h1 id="mbxmasterwritecoilmulrequest"><a name="mbxmasterwritecoilmulrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterwritecoilmulrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterwritecoilmulrequest" class="plugin-anchor" href="#mbxmasterwritecoilmulrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Write_Coil_Mul_Request</strong></h1>
+<h1 id="mbxmasterwritecoilmulrequest"><strong>MBx_Master_Write_Coil_Mul_Request</strong></h1>
 <pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Write_Coil_Mul_Request(_MBX_MASTER *pMaster,
                                            <span class="hljs-keyword">uint8_t</span>      SlaveID,
                                            <span class="hljs-keyword">uint16_t</span>     StartAddr,
@@ -541,7 +533,7 @@
 </code></pre>
 <p> The MBX master issues a write multiple coils request. The parameters Data and DataLen need to be formatted by the user. See the section on&quot;(0x0F)&#x5199;&#x591A;&#x4E2A;&#x7EBF;&#x5708;&#x7684;&#x683C;&#x5F0F; &quot;for details.
 <a href="https://www.yono233.cn/posts/shoot/24_7_26_modbus&#x534F;&#x8BAE;&#x4ECB;&#x7ECD;(&#x672A;&#x5B8C;&#x6210;" target="_blank">Introduction to Modbus Protocol</a>)</p>
-<h2 id="parameters_6"><a name="parameters_6" class="anchor-navigation-ex-anchor" href="#parameters_6"><i class="fa fa-link" aria-hidden="true"></i></a><a name="parameters" class="plugin-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Parameters</h2>
+<h2 id="parameters">Parameters</h2>
 <blockquote>
 <ul>
 <li>pMaster: Pointer to the MBX master object that is expected to issue the request.</li>
@@ -552,7 +544,7 @@
 <li>DataLen: Length of the data to write [in bytes].</li>
 </ul>
 </blockquote>
-<h2 id="return-value_6"><a name="return-value_6" class="anchor-navigation-ex-anchor" href="#return-value_6"><i class="fa fa-link" aria-hidden="true"></i></a><a name="return-value" class="plugin-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a>Return Value</h2>
+<h2 id="return-value">Return Value</h2>
 <blockquote>
 <ul>
 <li>MBX_API_RETURN_DEFAULT(0x00): Normal return.</li>
@@ -561,7 +553,7 @@
 </ul>
 </blockquote>
 <hr>
-<h1 id="mbxmasterwriteregmulrequest"><a name="mbxmasterwriteregmulrequest" class="anchor-navigation-ex-anchor" href="#mbxmasterwriteregmulrequest"><i class="fa fa-link" aria-hidden="true"></i></a><a name="mbxmasterwriteregmulrequest" class="plugin-anchor" href="#mbxmasterwriteregmulrequest"><i class="fa fa-link" aria-hidden="true"></i></a><strong>MBx_Master_Write_Reg_Mul_Request</strong></h1>
+<h1 id="mbxmasterwriteregmulrequest"><strong>MBx_Master_Write_Reg_Mul_Request</strong></h1>
 <pre><code class="lang-c"><span class="hljs-keyword">uint32_t</span> MBx_Master_Write_Reg_Mul_Request(_MBX_MASTER *pMaster, 
                                           <span class="hljs-keyword">uint8_t</span>      SlaveID,
                                           <span class="hljs-keyword">uint16_t</span>     StartAddr,
@@ -570,7 +562,7 @@
                                           <span class="hljs-keyword">uint16_t</span>     DataLen);
 </code></pre>
 <p> The MBX master issues a write multiple holding registers request.</p>
-<h2 id="parameters_7"><a name="parameters_7" class="anchor-navigation-ex-anchor" href="#parameters_7"><i class="fa fa-link" aria-hidden="true"></i></a><a name="parameters" class="plugin-anchor" href="#parameters"><i class="fa fa-link" aria-hidden="true"></i></a>Parameters</h2>
+<h2 id="parameters">Parameters</h2>
 <blockquote>
 <ul>
 <li>pMaster: Pointer to the MBX master object that is expected to issue the request.</li>
@@ -581,7 +573,7 @@
 <li>DataLen: Length of the data to write [in bytes].</li>
 </ul>
 </blockquote>
-<h2 id="return-value_7"><a name="return-value_7" class="anchor-navigation-ex-anchor" href="#return-value_7"><i class="fa fa-link" aria-hidden="true"></i></a><a name="return-value" class="plugin-anchor" href="#return-value"><i class="fa fa-link" aria-hidden="true"></i></a>Return Value</h2>
+<h2 id="return-value">Return Value</h2>
 <blockquote>
 <ul>
 <li>MBX_API_RETURN_DEFAULT(0x00): Normal return.</li>
@@ -591,7 +583,7 @@
 </blockquote>
 <hr>
 <footer class="page-footer"><span class="copyright">Copyright &amp;yono 2024 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">Date of revision:
-2024-11-20 06:33:32
+2024-11-20 07:06:49
 </span></footer>
                                 
                                 </section>
@@ -625,7 +617,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"API Series for Initiating Requests to Slave","level":"1.5.4","depth":2,"next":{"title":"utility","level":"1.6","depth":1,"path":"top/实用功能.md","ref":"top/实用功能.md","articles":[{"title":"User Configuration File","level":"1.6.1","depth":2,"path":"apidoc/tools/用户配置文件.md","ref":"apidoc/tools/用户配置文件.md","articles":[]}]},"previous":{"title":"MBx_Master_Error_Get","level":"1.5.3","depth":2,"path":"apidoc/apimaster/MBx_Master_Error_Get.md","ref":"apidoc/apimaster/MBx_Master_Error_Get.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-fontsettings","tbfed-pagefooter","hide-element","sidebar-style","expandable-chapters","chapter-fold","code","splitter","theme-api","github","back-to-top-button","anchors","anchor-navigation-ex","versions-select"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sidebar-style":{"author":"yono","title":"modbusX-Doc"},"tbfed-pagefooter":{"copyright":"Copyright &yono 2024","modify_label":"Date of revision:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/stbanana/modbusX"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"hide-element":{"elements":[".gitbook-link"]},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"mode":"float","pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","showGoTop":true,"printLog":false,"multipleH1":false,"multipleH2":false,"associatedWithSummary":true,"multipleH3":false,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"multipleH4":false},"theme-api":{"languages":[],"split":true,"theme":"light"},"back-to-top-button":{},"versions":{"options":[{"value":"https://stbanana.github.io/ModbusX-Doc/en","text":"English"},{"value":"https://stbanana.github.io/ModbusX-Doc/zh-hans","text":"中文"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"expandable-chapters":{}},"theme":"default","author":"yono","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"000-0-00-000000-0","variables":{},"title":"modbusX-Doc","language":"en","languages":{"en":{"name":"English","path":"en"},"zh-hans":{"name":"简体中文","path":"zh-hans"}},"gitbook":">=3.2.3","description":"This is gitbook","direction":"ltr"},"file":{"path":"apidoc/apimaster/Master2Slave.md","mtime":"2024-11-20T06:33:32.591Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-20T06:34:18.701Z"},"basePath":"../..","book":{"language":"en"}});
+            gitbook.page.hasChanged({"page":{"title":"API Series for Initiating Requests to Slave","level":"1.5.4","depth":2,"next":{"title":"utility","level":"1.6","depth":1,"path":"top/实用功能.md","ref":"top/实用功能.md","articles":[{"title":"User Configuration File","level":"1.6.1","depth":2,"path":"apidoc/tools/用户配置文件.md","ref":"apidoc/tools/用户配置文件.md","articles":[]}]},"previous":{"title":"MBx_Master_Error_Get","level":"1.5.3","depth":2,"path":"apidoc/apimaster/MBx_Master_Error_Get.md","ref":"apidoc/apimaster/MBx_Master_Error_Get.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","search-pro","-fontsettings","tbfed-pagefooter","hide-element","sidebar-style","expandable-chapters","chapter-fold","code","splitter","theme-api","github","back-to-top-button","versions-select"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sidebar-style":{"author":"yono","title":"modbusX-Doc"},"tbfed-pagefooter":{"copyright":"Copyright &yono 2024","modify_label":"Date of revision:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/stbanana/modbusX"},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"versions-select":{"type":"branches"},"hide-element":{"elements":[".gitbook-link"]},"highlight":{},"anchor-navigation-ex":{"showLevelIcon":false,"showLevel":false,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right","multipleH1":false,"multipleH2":false,"multipleH3":false,"multipleH4":false},"theme-api":{"languages":[],"split":true,"theme":"light"},"back-to-top-button":{},"versions":{"options":[{"value":"https://stbanana.github.io/ModbusX-Doc/en","text":"English"},{"value":"https://stbanana.github.io/ModbusX-Doc/zh-hans","text":"中文"}]},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"yono","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"isbn":"000-0-00-000000-0","variables":{},"title":"modbusX-Doc","language":"en","languages":{"en":{"name":"English","path":"en"},"zh-hans":{"name":"简体中文","path":"zh-hans"}},"gitbook":">=3.2.3","description":"This is gitbook","direction":"ltr"},"file":{"path":"apidoc/apimaster/Master2Slave.md","mtime":"2024-11-20T07:06:49.132Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-11-20T07:07:28.766Z"},"basePath":"../..","book":{"language":"en"}});
         });
     </script>
 </div>
