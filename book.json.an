@@ -15,9 +15,6 @@
 		 
 		 "splitter" 				// 使得左侧目录可以拖动宽度
 
-         
-         "back-to-top-button",      // 使得具有返回最上的小箭头
-
         "anchors",
         "anchor-navigation-ex"      // 组合在右侧具有悬浮的目录
 
